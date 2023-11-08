@@ -4,3 +4,131 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/* Common */
+a.btn {
+    all: unset;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+/* Hover */
+#col-nav li> a.btn:hover {
+    transition: color 0.5s;
+    color: #fff;
+}
+
+#col-nav ul.menu > li a.btn:hover {
+    color: #fff;
+    border-left: 2px solid #adff2f;
+}
+
+#col-nav .account .download a.btn h5:hover {
+    color: #fff;
+}
+
+#col-nav .playlist .add a.btn > h5:hover {
+    color: #fff;
+}
+
+/* Navbar */
+#main-container {
+    height: calc(100vh - 90px);
+}
+
+#col-nav {
+    width: 50px;
+    flex-shrink: 0;
+    padding: 5px 0;
+    background-color: #000;
+}
+
+.logo .logo-big.image.from-s {
+    display: none;
+}
+
+.logo .logo-small.image.only-xs {
+    display: flex;
+}
+
+.logo .logo-big {
+    width: 130px;
+}
+
+.logo .logo-small {
+    width: 30px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+ul.menu li a.btn {
+    color: #a3a3a3;
+}
+
+#col-nav ul.menu > li a.btn {
+    border-left: 2px solid transparent;
+}
+
+.menu li a img {
+    width: 25px;
+}
+
+.menu li .btn h5.from-s,
+.account .user-image h3.from-s {
+    display: none;
+}
+
+ul.menu li a > img {
+    padding-bottom: 10px;
+}
+
+#col-nav li.active {
+    border-left: 2px solid #adff2f;
+}
+
+.account > div.download, div.user-image {
+    padding: 10px 0;
+}
+
+.menu li a.btn,
+.account .download a.btn.flex-row,
+.account .user-image .flex-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.playlist.from-s {
+    display: none;
+    overflow: hidden;
+}
+
+.playlist ul.list {
+    overflow-y: auto;
+}
+
+.account .download a.btn img {
+    width: 18px;
+}
+
+.account hr.from-s {
+    display: none;
+}
+
+.account {
+    margin-top: auto;
+}
+
+.account .download .btn h5.from-s {
+    display: none;
+}
+
+.account .user-image img.image {
+    border-radius: 50px;
+    background-color: #808080;
+    width: 25px;
+    height: 25px;
+}
