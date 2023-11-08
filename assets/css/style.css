@@ -6,6 +6,33 @@
 }
 
 /* Common */
+h2 {
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+h3 {
+    font-size: .75rem;
+    font-weight: 900;
+}
+
+h4 {
+    font-size: .75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+h5 {
+    font-size: .75rem;
+    font-weight: 600;
+}
+
+h6 {
+    font-size: 10px;
+    font-weight: 600;
+    color: #a3a3a3;
+}
+
 a.btn {
     all: unset;
     cursor: pointer;
@@ -224,4 +251,30 @@ ul.menu li a > img {
 
 .music-box {
     padding: 0 20px;
+}
+
+.track h5 {
+    color: #a3a3a3;
+}
+
+#recent-list .row.flex-row {
+    gap: 10px;
+    text-align: center;
+    padding: 25px 0 10px;
+}
+
+#recent-list .row .track {
+    width: calc((100% - 10px) / 2);
+}
+
+#recent-list .row .track h3 {
+    padding: 10px 0;
+}
+
+
+.playlist.from-s h4,
+#col-music #recent-list > h2,
+#col-music #recent-list .track > h3,
+#col-nav .account .user-image a.btn > h3 {
+    color: #fff;
 }
