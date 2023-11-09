@@ -589,3 +589,23 @@ ul.menu li a > img {
         width: 39px;
     }
 }
+
+@media screen and (min-width: 768px) {
+    #recent-list .row .track,
+    #ai-list .row .track,
+    #bestartist-list .row .track {
+        flex-shrink: 0;
+        width: calc((100% - 30px) / 4);
+    }
+
+    #footer-container #track .icone-like-add.flex-column {
+        text-align: right;
+        display: flex;
+        padding-left: 40px;
+    }
+
+    #footer-container #track,
+    #footer-container #volume {
+        width: 210px;
+    }
+}
