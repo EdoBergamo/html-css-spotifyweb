@@ -385,11 +385,13 @@ ul.menu li a > img {
     color: #fff;
 }
 
-#footer-container #track {
+#footer-container #track,
+#footer-container #volume {
     width: 25%;
 }
 
-#footer-container #track a.btn > h5 {
+#footer-container #track a.btn > h5,
+#footer-container #volume {
     color: #fff;
 }
 
@@ -402,12 +404,14 @@ ul.menu li a > img {
     width: 28px;
 }
 
-#footer-container #track .icone-like-add i {
+#footer-container #track .icone-like-add i,
+#footer-container #volume .icone-volume i {
     font-size: 13px;
 }
 
 #footer-container #track.flex-row.align-center,
-#footer-container #audio-system .system-bottom.flex-row.space-btw.align-center {
+#footer-container #audio-system .system-bottom.flex-row.space-btw.align-center,
+#footer-container #volume .icone-volume.flex-row {
     gap: 10px;
 }
 
@@ -420,12 +424,14 @@ ul.menu li a > img {
     transition: scale 0.5s;
 }
 
-#footer-container #audio-system .system-bottom .time-progress-bar:hover::before {
+#footer-container #audio-system .system-bottom .time-progress-bar:hover::before,
+#footer-container #volume .volume-progress-bar:hover::before {
     background-color: #adff2f;
     cursor: pointer;
 }
 
-#footer-container #audio-system .system-bottom .time-progress-bar:hover::after {
+#footer-container #audio-system .system-bottom .time-progress-bar:hover::after,
+#footer-container #volume .volume-progress-bar:hover::after {
     display: block;
     cursor: pointer;
 }
@@ -451,14 +457,16 @@ ul.menu li a > img {
     gap: 20px;
 }
 
-#audio-system .system-bottom .time-progress-bar {
+#audio-system .system-bottom .time-progress-bar,
+#volume > .volume-progress-bar {
     background-color: #fff;
     width: 100%;
     height: 4px;
     border-radius: 50px;
 }
 
-#footer-container #audio-system .system-bottom .time-progress-bar::before {
+#footer-container #audio-system .system-bottom .time-progress-bar::before,
+#footer-container #volume .volume-progress-bar::before {
     content: '';
     background-color: #fff;
     position: absolute;
@@ -467,11 +475,13 @@ ul.menu li a > img {
     border-radius: 50px;
 }
 
-#audio-system .system-bottom.flex-row.space-btw.align-center div.time-progress-bar {
+#audio-system .system-bottom.flex-row.space-btw.align-center div.time-progress-bar,
+#volume div.volume-progress-bar {
     position: relative;
 }
 
-#audio-system .system-bottom .time-progress-bar::after {
+#audio-system .system-bottom .time-progress-bar::after,
+#volume .volume-progress-bar::after {
     content: '';
     position: absolute;
     left: 25%;
@@ -482,4 +492,9 @@ ul.menu li a > img {
     border-radius: 50px;
     background-color: #fff;
     display: none;
+}
+
+#volume.flex-row.align-center {
+    gap: 6px;
+    justify-content: flex-end;
 }
