@@ -6,6 +6,10 @@
 }
 
 /* Common */
+body {
+    font-family: 'Monserrat', sans-serif;
+}
+
 h2 {
     font-size: 1.25rem;
     font-weight: 800;
@@ -607,5 +611,27 @@ ul.menu li a > img {
     #footer-container #track,
     #footer-container #volume {
         width: 210px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #recent-list .row .track,
+    #ai-list .row .track,
+    #bestartist-list .row .track {
+        flex-shrink: 0;
+        width: calc((100% - 50px) / 6);
+    }
+
+    #col-music #recent-list .image-cover .overlay .icon-overlay {
+        font-size: 90px;
+    }
+
+    #volume .flex-row {
+        gap: 18px;
+    }
+
+    #footer-container #audio-system {
+        width: 520px;
+        flex-grow: 0;
     }
 }
