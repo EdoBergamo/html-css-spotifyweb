@@ -406,10 +406,80 @@ ul.menu li a > img {
     font-size: 13px;
 }
 
-#footer-container #track.flex-row.align-center {
+#footer-container #track.flex-row.align-center,
+#footer-container #audio-system .system-bottom.flex-row.space-btw.align-center {
     gap: 10px;
 }
 
 #footer-container #track .icone-like-add.flex-column > a.btn {
     padding: 0;
+}
+
+#footer-container #audio-system .system-top li.play:hover {
+    transform: scale(1.2);
+    transition: scale 0.5s;
+}
+
+#footer-container #audio-system .system-bottom .time-progress-bar:hover::before {
+    background-color: #adff2f;
+    cursor: pointer;
+}
+
+#footer-container #audio-system .system-bottom .time-progress-bar:hover::after {
+    display: block;
+    cursor: pointer;
+}
+
+#footer-container #audio-system {
+    width: 20%;
+    flex-grow: 1;
+    color: #fff;
+    display: flex;
+}
+
+#footer-container #audio-system .system-top .flex-row li.play {
+    padding: 0 10px;
+    font-size: 30px;
+}
+
+#footer-container #audio-system .system-top .flex-row li {
+    font-size: 18px;
+}
+
+#footer-container #audio-system .system-top .flex-row {
+    justify-content: center;
+    gap: 20px;
+}
+
+#audio-system .system-bottom .time-progress-bar {
+    background-color: #fff;
+    width: 100%;
+    height: 4px;
+    border-radius: 50px;
+}
+
+#footer-container #audio-system .system-bottom .time-progress-bar::before {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    width: 25%;
+    height: 4px;
+    border-radius: 50px;
+}
+
+#audio-system .system-bottom.flex-row.space-btw.align-center div.time-progress-bar {
+    position: relative;
+}
+
+#audio-system .system-bottom .time-progress-bar::after {
+    content: '';
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    background-color: #fff;
+    display: none;
 }
