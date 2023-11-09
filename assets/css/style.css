@@ -257,7 +257,9 @@ ul.menu li a > img {
     color: #a3a3a3;
 }
 
-#recent-list .row.flex-row {
+#recent-list .row.flex-row,
+#ai-list .row.flex-row,
+#bestartist-list .row.flex-row {
     gap: 10px;
     text-align: center;
     padding: 25px 0 10px;
@@ -277,17 +279,21 @@ ul.menu li a > img {
 #col-music #ai-list > h2,
 #col-music #ai-list .track > h3,
 #col-music #recent-list .track > h3,
-#col-nav .account .user-image a.btn > h3 {
+#col-nav .account .user-image a.btn > h3,
+#col-music #bestartist-list > h2,
+#col-music #bestartist-list .track > h3 {
     color: #fff;
 }
 
 #col-music #recent-list .image-cover,
-#col-music #ai-list .image-cover {
+#col-music #ai-list .image-cover,
+#col-music #bestartist-list .image-cover.round-image {
     position: relative;
 }
 
 #col-music #recent-list .image-cover div.overlay,
-#col-music #ai-list .image-cover div.overlay {
+#col-music #ai-list .image-cover div.overlay,
+#col-music #bestartist-list .image-cover.round-image div.overlay {
     background-color: rgba(0, 0, 0, .4);
     position: absolute;
     top: 0;
@@ -301,7 +307,8 @@ ul.menu li a > img {
 }
 
 #col-music #recent-list .image-cover .overlay .icon-overlay,
-#col-music #ai-list .image-cover .overlay .icon-overlay {
+#col-music #ai-list .image-cover .overlay .icon-overlay,
+#col-music #bestartist-list .image-cover.round-image .overlay .icon-overlay {
     color: white;
     font-size: 40px;
     position: absolute;
@@ -312,11 +319,13 @@ ul.menu li a > img {
 } 
 
 #col-music #recent-list .image-cover div.overlay:hover,
-#col-music #ai-list .image-cover div.overlay:hover, {
+#col-music #ai-list .image-cover div.overlay:hover, 
+#col-music #bestartist-list .image-cover.round-image div.overlay:hover {
     opacity: 1;
 }
 
-#ai-list h5 {
+#ai-list h5, 
+#bestartist-list h5 {
     margin-top: 10px;
     color: #a3a3a3;
 }
@@ -329,11 +338,23 @@ ul.menu li a > img {
 }
 
 #recent-list .row .track, 
-#ai-list .row .track {
+#ai-list .row .track,
+#bestartist-list .row .round-image imgx {
     width: calc((100% - 10px) / 2);
 }
 
 #recent-list .row .track h3,
-#ai-list .row .track h3 {
+#ai-list .row .track h3,
+#bestartist-list .row .track h3 {
     padding: 10px 0;
+}
+
+#col-music #bestartist-list .image-cover.round-image div.overlay {
+    border-radius: 50%;
+}
+
+#bestartist-list .row .track .round-image img {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
 }
